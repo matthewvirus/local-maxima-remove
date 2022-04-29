@@ -75,19 +75,19 @@ public class Tests {
             array[421] = 0;
             actual = LocalMaximaRemove.removeLocalMaxima(array);
 
-            //assertEquals(998, actual.length);
+            assertEquals(998, actual.length);
             assertEquals(-20, actual[0]);
-            //assertEquals(15, actual[997]);
-            //assertEquals(0, actual[420]);
+            assertEquals(15, actual[997]);
+            assertEquals(0, actual[420]);
         }
 
         {
             array = new int[]{100, 0};
             expected = new int[]{0};
-            //actual = LocalMaximaRemove.removeLocalMaxima(array);
+            actual = LocalMaximaRemove.removeLocalMaxima(array);
 
             assertArrayEquals(new int[]{100, 0}, array);
-            //assertArrayEquals(expected, actual);
+            assertArrayEquals(expected, actual);
         }
 
         {
